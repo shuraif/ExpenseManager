@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">ExpenseManager</string>
+    <string-array name="ecategory">
+        <item>All</item>
+        <item>Automobile</item>
+        <item>Entertainment</item>
+        <item>Family</item>
+        <item>Food</item>
+        <item>Health Care</item>
+        <item>Home</item>
+        <item>Office</item>
+        <item>Loan</item>
+        <item>Travel</item>
+        <item>Tax</item>
+        <item>Insurance</item>
+    </string-array>
+    <string-array name="period">
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+        <item>yearly</item>
+    </string-array>
+    <string-array name="period2">
+        <item>daily</item>
+
+        <item>monthly</item>
+     \
+    </string-array>
+    <string-array name="icategory">
+        <item>Salary</item>
+        <item>Equities</item>
+        <item>Personal savings</item>
+        <item>Rents and Loyalties</item>
+        <item>Part-time Work</item>
+        <item>Pensions</item>
+        <item>Annuities</item>
+        <item>Account Transfer</item>
+
+    </string-array>
+    <string-array name="currency"></string-array>
+
+
+        <string name="one">One</string>
+        <string name="in">In</string>
+        <string name="equal">Is Equal To</string>
+        <string name="result">Click Calculate for Result</string>
+        <string name="calculate">Calculate</string>
+        <string name="powered">Powered By Yahoo! Finance</string>
+
+        <string-array name="money_array">
+            <item >AED</item>
+            <item >AFN</item>
+            <item >AMD</item>
+            <item >AOA</item>
+            <item >ARS</item>
+            <item >AUD</item>
+            <item >AZN</item>
+            <item >BAM</item>
+            <item >BBD</item>
+            <item >BDT</item>
+            <item >BGN</item>
+            <item >BHD</item>
+            <item >BIF</item>
+            <item >BMD</item>
+            <item >CAD</item>
+            <item >CHF</item>
+            <item >CLP</item>
+            <item >CNY</item>
+            <item >COP</item>
+            <item >CUP</item>
+            <item >EGP</item>
+            <item >EUR</item>
+            <item >GBP</item>
+            <item >HKD</item>
+            <item >IDR</item>
+            <item >INR</item>
+            <item >IQD</item>
+            <item >JPY</item>
+            <item >KWD</item>
+            <item >LKR</item>
+            <item >MYR</item>
+            <item >QAR</item>
+            <item >SAR</item>
+            <item >SGD</item>
+            <item >USD</item>
+            <item >YER</item>
+            <item >ZAR</item>
+            <item >ZWL</item>
+
+
+
+
+        </string-array>
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="weekdays">
+        <item>sunday</item>
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+        <item>saturday</item>
+    </string-array>
+    <string-array name="years_array">
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+    </string-array>
+
+    <string-array name="type_array">
+
+        <item>Credit</item>
+        <item>Debit</item>
+
+    </string-array>
+    <string-array name="viewbyexpese">
+
+        <item>All</item>
+        <item>Payee</item>
+        <item>Date</item>
+
+    </string-array>
+
+</resources>

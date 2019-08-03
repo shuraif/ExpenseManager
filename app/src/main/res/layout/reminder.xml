@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingLeft="15dp"
+        android:id="@+id/tl_top">
+<TableRow
+    android:paddingTop="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Date"/>
+    <EditText
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/rem_date"
+        android:gravity="center_horizontal"
+        android:focusable="false"/>
+</TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Time"/>
+            <EditText
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/rem_time"
+                android:gravity="center_horizontal"
+                android:focusable="false"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Type"/>
+            <Spinner
+                android:textSize="16dp"
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/type_array" />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/payertype"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Payee"/>
+            <EditText
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/rem_pay"
+                android:gravity="center_horizontal"
+                android:focusableInTouchMode="true"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="Amount"/>
+            <EditText
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:id="@+id/rem_amount"
+                android:gravity="center_horizontal"/>
+        </TableRow>
+    </TableLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/rem_ok"
+
+                android:paddingTop="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rippleColor="@color/green"
+                android:outlineAmbientShadowColor="@color/green"
+                android:outlineSpotShadowColor="@color/green"
+                android:src="@drawable/ic_done_black_24dp"
+                android:layout_margin="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

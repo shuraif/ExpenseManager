@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2,3"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="8dp"
+    android:id="@+id/tl"
+    >
+    <TableRow
+        android:stretchColumns="0,1,2,3">
+
+        <Button
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:text="daily" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="weekly"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/weekly"
+            android:background="#00000000"/>
+        <Button
+            android:layout_width="match_parent"
+            android:text="monthly"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/monthly"
+            android:background="#00000000"/>
+        <Button
+            android:layout_width="match_parent"
+            android:text="yearly"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/yearly"
+            android:background="#00000000"
+            />
+    </TableRow>
+</TableLayout>
+    <ListView
+        android:divider="@color/black"
+
+       android:layout_below="@+id/tl"
+        android:id="@+id/lst_bud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</RelativeLayout>

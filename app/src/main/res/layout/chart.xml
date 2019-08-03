@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cview1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        android:background="@color/lavender"
+        >
+        <TableLayout
+            android:id="@+id/graph_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,3"
+            android:paddingBottom="10dp"
+           >
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView android:text="period"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/graph_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/period2" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/green"/>
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:text="Income"
+                    android:textColor="@color/green"/>
+            </TableRow>
+
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:text="year"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/graph_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/years_array" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/red"/>
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:text="Expense"
+                    android:textColor="@color/red"
+                    />
+            </TableRow>
+            <TableRow
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:text="month"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/graph_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/months_array" />
+            </TableRow>
+
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="12dp"
+
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:layout_below="@+id/cview1"
+        android:background="@color/lavender"
+        >
+    <com.jjoe64.graphview.GraphView
+
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+
+        android:background="@color/lavender"
+        />
+
+
+</android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="5dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:background="@color/lavender"
+
+        >
+
+    <TableLayout
+        android:padding="3dp"
+        android:background="@color/lavender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+            <TableLayout>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="category"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bud_category"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bud_id"
+                        android:textColor="@color/black"
+                       />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:paddingLeft="10dp"
+                android:stretchColumns="0,1">
+                <TableRow>
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="Total:" />
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/total_budget"/>
+                <TextView />
+            </TableRow>
+                <View android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:layout_height="1dp" />
+                <TableRow>
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="Alert:"
+                        />
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/orange"
+                        android:id="@+id/bud_alert"
+                        />
+                </TableRow>
+                <View android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:layout_height="1dp" />
+            <TableRow>
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Balance:"
+                    />
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/green"
+             android:id="@+id/bud_remaining"
+                    />
+            </TableRow>
+                <View android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:layout_height="1dp" />
+                <TableRow>
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="Spend:"
+                        />
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/red"
+                        android:id="@+id/bud_spend"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

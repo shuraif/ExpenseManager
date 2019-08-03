@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mint_cream">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/view2"
+        android:stretchColumns="0,1,2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <TableRow>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="25dp"
+                android:text="Balance"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/baltext"
+                android:textColor="@color/black"/>
+            <TextView
+                android:textSize="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_balance"
+
+                android:layout_toRightOf="@+id/baltext"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/view2">
+
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Income"
+            android:textAllCaps="false"
+
+            android:drawableLeft="@drawable/ic_trending_up_black_24dp"
+            android:drawableTint="@color/green"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            />
+
+    <Button
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btn_income"
+        android:id="@+id/btn_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:textAllCaps="false"
+
+        android:drawableLeft="@drawable/ic_trending_down_black_24dp"
+        android:drawableTint="@color/red"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+
+        />
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/btn_expense"
+            android:id="@+id/btn_view_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Income"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_view_list_black_24dp"
+
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+
+            />
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/btn_view_income"
+            android:id="@+id/btn_view_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Expense"
+            android:textAllCaps="false"
+
+            android:drawableLeft="@drawable/ic_view_list_black_24dp"
+
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            />
+
+
+
+
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textAllCaps="false"
+            android:layout_below="@+id/btn_view_expense"
+
+
+            android:drawableLeft="@drawable/ic_bag_black_24dp"
+
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            />
+
+
+
+    <Button
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Chart"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btn_budget"
+
+        android:drawableLeft="@drawable/ic_graph_black_24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Reminder"
+            android:textAllCaps="false"
+            android:layout_below="@+id/btn_chart"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_reminder_black_24dp"
+            />
+
+        <Button
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_reminder"
+            android:text="Tools"
+            android:background="@drawable/border"
+            android:id="@+id/tools"
+            android:drawableLeft="@drawable/ic_tools_black_24dp"
+            />
+</RelativeLayout>
+</ScrollView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

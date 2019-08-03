@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mint_cream"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cv1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        >
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/btn_budget"
+        android:text="Calculator"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+
+
+        android:drawableLeft="@drawable/ic_calc_black_24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cv1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cv2"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        >
+    <Button
+
+        android:id="@+id/btn_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:text="notes"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_note_black_24dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cv2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cv3"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        >
+
+    <Button
+
+        android:id="@+id/btn_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        android:text="Backup and sync"
+        android:textAllCaps="false"
+        android:paddingLeft="6dp"
+        android:drawableLeft="@drawable/ic_cloud_black_24dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cv3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cv4"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        >
+
+    <Button
+
+        android:id="@+id/btn_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Calculator"
+        android:paddingLeft="6dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_calc_black_24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cv4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="12dp"
+        android:id="@+id/cv5"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        >
+    <Button
+
+        android:id="@+id/btn_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="6dp"
+        android:text="Currency Convert"
+        android:textAllCaps="false"
+
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_convert_black_24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.CardView
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+
+        >
+
+
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <RelativeLayout
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TableLayout
+        android:paddingTop="10dp"
+        android:id="@+id/addexp_tlone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_eamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Amount"
+                android:paddingLeft="10dp"
+                 />
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_eamount"
+                android:layout_toRightOf="@+id/et_eamount"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="payee"
+                android:id="@+id/tv_epayee"
+                />
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_payee"
+                android:layout_toRightOf="@+id/et_epayee"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="category"
+
+                />
+            <Spinner
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/spinner_ecat"
+                android:entries="@array/ecategory">
+
+            </Spinner>
+
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:text="Description   "
+                android:id="@+id/tv_edescription"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/et_edescription"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:text="Ref No"
+                android:id="@+id/tv_eref"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/et_ereference"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:text="Date"
+                android:id="@+id/tv_date"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:inputType="date"
+                android:id="@+id/et_edate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="dd/mm/yy"
+                android:focusable="false"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:layout_below="@+id/addexp_tlone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:text="Reciept"
+            android:id="@+id/tv_rec"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <ImageView
+
+            android:layout_toRightOf="@+id/tv_rec"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/exp_add_reciept"
+            android:layout_margin="16dp"
+            android:background="@drawable/ic_img_black_24dp"
+            />
+
+    </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_addexpense"
+
+            android:paddingTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_done_black_24dp"
+
+            android:layout_margin="16dp" />
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

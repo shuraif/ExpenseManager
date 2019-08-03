@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <android.support.v7.widget.CardView
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="12dp"
+        android:id="@+id/view1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:background="@color/lavender"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1">
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Category"
+                android:textSize="18sp"/>
+            <Spinner
+                android:textColor="@color/black"
+                android:id="@+id/bud_cat"
+                android:entries="@array/ecategory"
+                android:textSize="18sp">
+
+            </Spinner>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Period"
+                android:textSize="18sp"/>
+            <Spinner
+                android:textColor="@color/black"
+                android:id="@+id/bud_period"
+                android:entries="@array/period"
+                android:textSize="18sp">
+
+            </Spinner>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Start date"
+                android:textSize="18sp"/>
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/bud_date1"
+                android:textSize="18sp"
+                android:focusable="false"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Amount"
+                android:textSize="18sp"/>
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/bud_amount99"
+                android:textSize="18sp"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="alert amount"
+                android:textSize="18sp"/>
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/bud_alert99"
+                android:inputType="number"
+                android:textSize="18sp"/>
+        </TableRow>
+
+
+    </TableLayout>
+        </RelativeLayout>
+        </ScrollView>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_addbudget"
+
+                android:paddingTop="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rippleColor="@color/green"
+                android:outlineAmbientShadowColor="@color/green"
+                android:outlineSpotShadowColor="@color/green"
+                android:src="@drawable/ic_done_black_24dp"
+                android:layout_margin="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
